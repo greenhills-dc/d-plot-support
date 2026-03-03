@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-PLoT サポート</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #f5f5f7;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        header h1 {
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        header p {
+            color: #86868b;
+            font-size: 1.1em;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .card h2 {
+            font-size: 1.3em;
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+        .card p, .card li {
+            color: #515154;
+            margin-bottom: 8px;
+        }
+        .card ul {
+            padding-left: 20px;
+        }
+        .card ul li {
+            margin-bottom: 6px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e5e5e7;
+            padding: 16px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item h3 {
+            font-size: 1em;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+        }
+        .faq-item p {
+            color: #86868b;
+            font-size: 0.95em;
+        }
+        .contact-info {
+            text-align: center;
+            padding: 24px;
+        }
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .badge {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            color: #86868b;
+            font-size: 0.85em;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e5e7;
+        }
+        footer a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>D-PLoT</h1>
+            <p>口腔内規格写真レイアウト作成ツール</p>
+        </header>
+
+        <!-- アプリ概要 -->
+        <div class="card">
+            <h2>アプリについて</h2>
+            <p>D-PLoT（Dental Photo Layout Plotter）は、口腔内規格写真を自動配置し、診療記録・症例管理・研究・学術発表用レイアウトを効率的に作成するためのmacOSアプリケーションです。</p>
+            <br>
+            <p><span class="badge">完全オフライン</span> インターネット接続不要。患者データが外部に送信されることはありません。</p>
+        </div>
+
+        <!-- 動作環境 -->
+        <div class="card">
+            <h2>動作環境</h2>
+            <ul>
+                <li>macOS 14.0 (Sonoma) 以降</li>
+                <li>対応画像形式: JPEG, PNG, TIFF, HEIC</li>
+            </ul>
+        </div>
+
+        <!-- よくある質問 -->
+        <div class="card">
+            <h2>よくある質問</h2>
+
+            <div class="faq-item">
+                <h3>Q. 初回起動時にまず何をすればいいですか？</h3>
+                <p>左パネルの「取り込み順を編集」ボタンから、お使いの撮影順序を登録してください。一度登録すれば、次回以降は画像をドロップするだけで自動的に正しい位置に配置されます。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q. 対応している写真フォーマットは何ですか？</h3>
+                <p>12枚法、9枚法、5枚法+正貌、4枚法、3枚法（顔貌写真）に対応しています。13枚・15枚・36枚法（18ペア）など複数フォーマットの一括生成も可能です。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q. 患者の写真データはどこに保存されますか？</h3>
+                <p>すべての画像はユーザーが指定したフォルダにのみ保存されます。クラウドやサーバーへのアップロードは一切行いません。アプリは完全にオフラインで動作します。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q. 書き出した画像の解像度を変更できますか？</h3>
+                <p>はい。書き出しダイアログでDPI（解像度）を設定できます。印刷用途には300DPI以上を推奨します。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q. 撮影順序を医院独自のものに変更できますか？</h3>
+                <p>はい。「取り込み順を編集」機能でお使いの撮影順序に合わせてカスタマイズし、プリセットとして保存できます。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q. 作業途中のレイアウトを保存できますか？</h3>
+                <p>はい。メニューの「ファイル」&gt;「保存」でプロジェクトファイル（.dpcase）として保存し、後から再開できます。</p>
+            </div>
+        </div>
+
+        <!-- お問い合わせ -->
+        <div class="card contact-info">
+            <h2>お問い合わせ</h2>
+            <p>ご不明な点やご要望がありましたら、お気軽にご連絡ください。</p>
+            <br>
+            <p><a href="mailto:support@greenhills-dc.org">support@greenhills-dc.org</a></p>
+        </div>
+
+        <footer>
+            <p>Copyright &copy; 2026 D-PLoT開発チーム. All rights reserved.</p>
+            <p><a href="./privacy.html">プライバシーポリシー</a></p>
+        </footer>
+    </div>
+</body>
+</html>
